@@ -71,7 +71,39 @@ Enter password:
 customer         | customer_id
 ```
 
-### Решение:  
+### Решение:    
+
+- Вероятно, вскоре мне понадобится, все-таки, поставить какую-то графику...и excel. Выглядеть это все будет, примерно, вот так:
+
+```
++----------------------------+--------------------------+
+| Таблица                    | Первичный ключ           |
++----------------------------+--------------------------+
+| actor                      | actor_id                 |
+| actor_info                 | actor_id                 |
+| address                    | address_id               |
+| category                   | category_id              |
+| city                       | city_id                  |
+| country                    | country_id               |
+| customer                   | customer_id              |
+| customer_list              | ID                       |
+| film                       | film_id, actor_id, category_id, language_id, inventory_id, country_id|                  |
+| film_actor                 | actor_id, film_id        |
+| film_category              | film_id, category_id, language_id|
+| film_list                  | film_list_id             |
+| film_text                  | film_text_id, language_id, category_id|                  |
+| inventory                  | inventory_id             |
+| language                   | language_id              |
+| nicer_but_slower_film_list | nicer_but_slower_film_list_id|                      
+| payment                    | payment_id, customer_id, staff_id|
+| rental                     | rental_id                |
+| sales_by_film_category     | sales_by_film_category_id|
+| sales_by_store             | sales_by_store_id, film_id, sales_by_film_category_id|                    
+| staff                      | staff_id                 |
+| staff_list                 | staff_list_id. staff_id                       |
+| store                      | store_id                 |
++----------------------------+--------------------------+
+```
 
 ---
 
