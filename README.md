@@ -150,7 +150,7 @@ customer         | customer_id
 | film_text                  | film_id                  |
 | inventory                  | inventory_id             |
 | language                   | language_id              |
-| nicer_but_slower_film_list  |                          |
+| nicer_but_slower_film_list |                          |
 | payment                    |                          |
 | rental                     | rental_id                |
 | sales_by_film_category     |                          |
